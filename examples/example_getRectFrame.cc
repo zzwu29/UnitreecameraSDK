@@ -14,6 +14,7 @@
 int main(int argc, char *argv[]){
     
     int deviceNode = 0; ///< default 0 -> /dev/video0
+    deviceNode = 2; ///< default 2 -> /dev/video2
     cv::Size frameSize(1856, 800); ///< default frame size 1856x800
     int fps = 30; ///< default camera fps: 30
     
@@ -32,7 +33,8 @@ int main(int argc, char *argv[]){
     
     cam.setRawFrameSize(frameSize); ///< set camera frame size
     cam.setRawFrameRate(fps);       ///< set camera camera fps
-    cam.setRectFrameSize(cv::Size(frameSize.width >> 2, frameSize.height >> 1)); ///< set camera rectify frame size
+    // cam.setRectFrameSize(cv::Size(frameSize.width >> 2, frameSize.height >> 1)); ///< set camera rectify frame size
+    cam.setRectFrameSize(cv::Size(frameSize.width >> 1, frameSize.height >> 0)); ///< set camera rectify frame size
     cam.startCapture(); ///< disable image h264 encoding and share memory sharing
     
     usleep(500000);

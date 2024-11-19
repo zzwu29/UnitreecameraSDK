@@ -14,7 +14,7 @@ RectifyFrameSize: !!opencv-matrix
    rows: 1
    cols: 2
    dt: d
-   data: [ 464., 400. ]
+   data: [ 928., 800. ]
 LeftXi: !!opencv-matrix
    rows: 1
    cols: 1
@@ -24,9 +24,9 @@ LeftIntrinsicMatrix: !!opencv-matrix
    rows: 3
    cols: 3
    dt: d
-   data: [ 1.7792010505518149e+02, 1.3804164864635732e-01,
-       2.2686232395518809e+02, 0., 1.8317034163215340e+02,
-       1.7196853435898211e+02, 0., 0., 1. ]
+   data: [ 3.5584021011036299e+02, 2.7608329729271464e-01,
+       4.5372464791037618e+02, 0., 3.6634068326430679e+02,
+       3.4393706871796422e+02, 0., 0., 1. ]
 LeftDistortionCoefficients: !!opencv-matrix
    rows: 1
    cols: 4
@@ -50,9 +50,9 @@ RightIntrinsicMatrix: !!opencv-matrix
    rows: 3
    cols: 3
    dt: d
-   data: [ 1.7568810938506914e+02, 5.5445427493854293e-01,
-       2.1833426525925458e+02, 0., 1.8083060416468348e+02,
-       1.8298715784210856e+02, 0., 0., 1. ]
+   data: [ 3.5137621877013828e+02, 1.1089085498770859e+00,
+       4.3666853051850916e+02, 0., 3.6166120832936696e+02,
+       3.6597431568421712e+02, 0., 0., 1. ]
 RightDistortionCoefficients: !!opencv-matrix
    rows: 1
    cols: 4
