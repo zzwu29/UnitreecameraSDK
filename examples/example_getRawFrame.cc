@@ -14,6 +14,11 @@
 int main(int argc, char *argv[]){
     
     int deviceNode = 0; // default 0 -> /dev/video0
+
+    // run "ls /dev/video*" to check the device node number
+    // choose the lower one
+    deviceNode = 2; // default 2 -> /dev/video2
+
     cv::Size frameSize(1856, 800); // defalut image size: 1856 X 800
     int fps = 30;
     
